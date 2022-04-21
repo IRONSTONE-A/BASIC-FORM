@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="BT_sales_form.css">
+
+    <title>Sales Agreement</title>
+</head>
+<body>
+    <h2>
+        BT Tasarım Programı Kurulum ve Satış Sözleşmesi
+    </h2>
+    <form action="#">
+        <div class="container1">
+            <fieldset>
+                <legend>Sözleşme Onay</legend>
+                <div class="check-label">
+                    <input type="checkbox" name="onaylama" id="onay">
+                    <label for="onay">Aşagıdaki bilgilerin doğrulugunu kabul ediyorum ve sözleşmesini onaylıyorum.</label>
+                </div>
+                <div>
+                    <input type="submit" value="Formu Kaydet">
+                    <input type="reset" value="Reset">
+                </div> 
+            </fieldset>
+        </div>
+        <div class="div2">
+            <fieldset class="table">
+                <legend> Kişisel Bilgiler</legend>
+                <div class="row">
+                    <label for="Id">Form Güvenlik ID</label>
+                    <input type="text" name="Form-Id" id="Id" placeholder="Lütfen ID Giriniz">
+                </div>
+                <div class="row">
+                    <label for="isim">Ad</label>
+                    <input type="text" name="Ad" id="isim" placeholder="Lütfen Adınızı Giriniz">
+                </div>
+                <div class="row">
+                    <label for="soyisim">Soyad</label>
+                    <input type="text" name="Soyad" id="soyisim" placeholder="Lütfen Soyadınızı Giriniz">
+                </div>
+                <div class="row"> 
+                    <label for="age">Yas</label>
+                    <input type="number" name="Yas" id="age" placeholder="Lütfen Yaşınızı Yazınız">
+                </div>
+                <div class="row">
+                    <label for="mail">Mail Adresi</label>
+                    <input type="email" name="Mail" id="mail" placeholder="exampe@examle.com">
+                </div>
+                <div class="row">
+                    <label for="Foto">Fotoğraf Ekle</label>
+                    <input type="file" name="Dosya" id="Foto">
+                </div>
+            </fieldset>
+        </div>
+        <div class="div3">
+            <fieldset class="table3">
+                <legend>Diğer Bilgiler</legend>
+                <h4>Buradaki Alanlar Mesleki Deneyimi Kapsar</h4>
+                <div class="row3 ">
+                    <label for="Giris">Sektöre Giriş Tarihi</label>
+                    <input type="date" name="Giris-Tarihi" id="Giris">
+                </div>
+                <div class="row3">
+                    <div>
+                        <label for="Deneyim">Sektör Deneyimi</label>
+                    </div>
+                    <div class="bottom">
+                        <div>
+                            <input type="radio" name="Deneyim" id="Deneyim1">
+                            <label for="Deneyim1">1-3 yıl</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Deneyim" id="Deneyim2">
+                            <label for="Deneyim2">3-5 yıl</label>
+                        </div>
+                        <div>
+                            <input type="radio" name="Deneyim" id="Deneyim3">
+                            <label for="Deneyim3">5-15 yıl</label>
+                        </div>
+                        <div>
+                           <input type="radio" name="Deneyim" id="Deneyim4">
+                            <label for="Deneyim4">15 yıl ve üzeri</label> 
+                        </div>
+                    </div>
+                </div>
+                <div class="Progd">
+                    <label for="pg">Programlama Dilleri</label>
+                    <select name="Programlama Dilleri" id="pg" size="5">
+                        <option value="Python">Python</option>
+                        <option value="JavaScript">JavaScript</option>
+                        <option value="PHP">PHP</option>
+                        <option value="C#">C#</option>
+                        <option value="Java">Java</option>
+                        <option value="Go">Go</option>
+                       
+                    </select>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="sozlesme">
+                <legend>Sözleşme Kopyası</legend>
+                <textarea name="Message" id="message" cols="50" rows="5">Bu sözleşme kopyası, yapılan işlemlere dair alıcıyı bilgilendirmek maksadıyla hazırlanmış olup asıl sözleşme metni ile birebir aynıdır. Sözleşme nedeniyle oluşan anlaşmazlıkları çözmek için Ticaret Mahkemeleri yetkilidir.Sözleşme ile taraflar yükümlülklerini yerine getirmeyi taahhüt etmişlerdir.</textarea>
+            </fieldset>
+        </div>
+        <div>
+            <fieldset class="footer">
+                <legend>Mail Listesi</legend>
+                <div>
+                    <label for="maillist">Mail Listesine Katılmak <b>İstiyorum</b></label>
+                    <input type="radio" name="MailList" id="maillist" checked>
+                </div>
+                <div>
+                    <label for="maillist2">Mail Listesine Katılmak <b><u>İstemiyorum</u></b></label>
+                    <input type="radio" name="MailList" id="maillist2">
+                </div>
+            </fieldset>
+        </div>
+   
+    </form>
+</body>
+</html>
